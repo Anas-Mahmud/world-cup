@@ -36,6 +36,11 @@ hr{
     background: #DD0000;
     border-radius: 8px;
     padding: 10px 25px;
+    transition: padding 1s;
+}
+.button:hover{
+    background: orange;
+    padding: 13px 40px;
 }
 /* main */
 .articles{
@@ -110,6 +115,11 @@ footer{
 .footer-item{
     display: flex;
     justify-content: space-evenly;
+}
+.fa-brands{
+    color: whitesmoke;
+    margin: 50px;
+    font-size: 30px;
 }
 
 /* --------------
