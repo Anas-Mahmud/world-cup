@@ -1,0 +1,165 @@
+/* font-family */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+
+body{
+    font-family: 'Poppins', sans-serif;
+}
+h1{
+    font-size: 70px;
+}
+hr{
+    color: 1px solid white;
+    opacity: 0.5;
+    width: 1520px;
+}
+/* header-banner */
+.banner{
+    display: flex;
+    justify-content: space-around;
+    background: #161616;
+    border-radius: 30px;
+    margin: 0 10%;
+}
+.banner-text{
+    color: white;
+    padding: 30px;
+}
+.banner-image{
+    width: 50%;
+}
+.banner-image img{
+    width: 100%;
+}
+.button{
+    text-decoration: none;
+    color: white;
+    background: #DD0000;
+    border-radius: 8px;
+    padding: 10px 25px;
+}
+/* main */
+.articles{
+    display: grid;
+    grid-template-columns: 25% auto;
+    margin: 5% 15%;
+    column-gap: 24px;
+}
+/* aside */
+.side-ber{
+    background: #161616;
+    border-radius: 10px;
+    width: 312px;
+    height: 312px;
+    display: flex;
+    flex-direction: column;
+}
+.side-ber a{
+    text-decoration: none;
+    color:#161616;
+    margin: 30px;
+}
+.page-button{
+    text-align: center;
+    width: 200px;
+    margin: 20px 38px;
+    padding: 18px;
+    background: #FFFFFF;
+    border-radius: 10px;
+    border: 0.5 solid black;
+}
+.selected{
+    background: #DD0000;
+    color: white;
+}
+/* articles */
+.matchs{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-column-gap: 24px;
+    row-gap: 24px;
+}
+.match{
+    width: 312px;
+    height: 242px;
+    border-radius: 10px;
+    border: 1px solid rgb(235, 235, 235);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.match-title{
+    display: flex;
+    column-gap: 20px;
+    align-items: flex-end
+}
+/* footer */
+footer{
+    background: black;
+    color: white;
+    text-align: center;
+    font-size: 16px;
+    padding: 50px;
+}
+.footer-item{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+/* --------------
+   Media Queries 
+---------------- */
+
+/* Medis Querie for Mobile */
+@media screen and (max-width: 576px){
+    .banner{
+        flex-direction: column;
+    }
+    .banner-text{
+        padding: 10px;
+    }
+    .banner-image{
+        padding: 20px 0 0 80px;
+    }
+    .articles{
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .side-ber{
+        background: none;
+    }
+    .page-button{
+        border: 1px solid #E8E8E8;
+        padding: 10px;
+    }
+    .matchs{
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .footer-item{
+        flex-direction: column;
+    }
+}
+ 
+/* Medis Querie for Teblet */
+@media screen and (min-width: 577px) and (max-width: 1068px){
+   .banner-image{
+        width: 50%;
+   }
+   .side-ber{
+        flex-direction: row;
+        width: 100px;
+        height: 100px;
+        background: none;
+   }
+   .page-button{
+        border: 1px solid #E8E8E8;
+        height: 34px;
+        padding: 20px 30px;
+        margin: 0 10px;
+   }
+   .articles{
+        grid-template-columns: repeat(1, 1fr);
+   }
+   .matchs{
+        grid-template-columns: repeat(2, 1fr);
+   }
+}                          
