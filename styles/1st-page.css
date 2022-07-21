@@ -19,6 +19,10 @@ hr{
     background: #161616;
     border-radius: 30px;
     margin: 0 10%;
+    transition: margin 1s;
+}
+.banner:hover{
+    margin: 0 7%;
 }
 .banner-text{
     color: white;
@@ -104,6 +108,19 @@ hr{
 .icon{
     margin-left: 20px;
 }
+/* click-button */
+.click{
+    display: none;
+    margin: 50px 0;
+    text-align: center;
+}
+.click a{
+    text-decoration: none;
+    background: #DD0000;
+    color: white;
+    padding: 10px 30px;
+    border-radius: 10px;
+}
 /* footer */
 footer{
     background: black;
@@ -128,11 +145,17 @@ footer{
 
 /* Medis Querie for Mobile */
 @media screen and (max-width: 576px){
+    h1{
+        font-size: 30px;
+    }
     .banner{
         flex-direction: column;
     }
     .banner-text{
         padding: 10px;
+    }
+    .banner-text p{
+        font-size: 15px;
     }
     .banner-image{
         padding: 20px 0 0 80px;
@@ -157,6 +180,12 @@ footer{
  
 /* Medis Querie for Teblet */
 @media screen and (min-width: 577px) and (max-width: 1068px){
+    h1{
+        font-size: 30px;
+    }
+    .banner-text p{
+        font-size: 10px;
+    }
    .banner-image{
         width: 50%;
    }
@@ -177,6 +206,9 @@ footer{
    }
    .blogs{
         grid-template-columns: repeat(2, 1fr);
+   }
+   .click{
+        display: block;
    }
 }
 
